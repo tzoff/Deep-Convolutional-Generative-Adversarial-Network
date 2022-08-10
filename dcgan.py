@@ -302,10 +302,6 @@ train(train_dataset, EPOCHS)
 
 checkpoint.restore(tf.train.latest_checkpoint(checkpoint_dir))
 
-"""## Create a GIF
-
-"""
-
 # Display a single image using the epoch number
 def display_image(epoch_no):
   return PIL.Image.open('image_at_epoch_{:04d}.png'.format(epoch_no))
